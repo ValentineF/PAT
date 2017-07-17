@@ -18,7 +18,6 @@
 #include<string>
 #include<algorithm>
 using namespace std;
-
 bool IsPrime(int num)
 {
 	for (int i = 2; i <= sqrt(num); i++)
