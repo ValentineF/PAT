@@ -24,7 +24,7 @@ d&Hyscvnm
 输出样例：
 THU 14:04*/
 
-//输出太烦了呀呀呀，从别人那fork了一份https://github.com/liuchuo/PAT/tree/master/PAT%E4%B9%99%E7%BA%A7(Basic%20Level)
+//输出太烦了呀呀呀，从别人那fork了一份https://github.com/liuchuo/PAT
 
 #include <iostream>
 #include <string>
