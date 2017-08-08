@@ -11,17 +11,21 @@ return [0, 1].
 */
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-       for (int i = 0; i < nums.size(); i++)
+	vector<int> twoSum(vector<int>& nums, int target) {
+		map<int, int> m;
+		int length = nums.size();
+		for (int i = 0; i < length; i++)
 		{
-			for (int j = i+1; j < nums.size(); j++)
-			{
-				if (nums[i] + nums[j] == target)
-				{
-					return vector<int> { i, j };
-				}
-            }
+			m[nums[i]] = i;
 		}
-        return vector<int> { 0 };
-    }
+		for (int i = 0; i < length; i++)
+		{
+			int ans = target - nums[i];
+			if(m.find(ans)!=m.end()  && m[ans] != i)
+			{
+				return vector<int>{ i,m[ans] };
+			}
+		}
+		return nums;
+	}
 };
